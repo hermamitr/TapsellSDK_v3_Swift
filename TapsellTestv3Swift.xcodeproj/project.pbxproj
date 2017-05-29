@@ -12,7 +12,23 @@
 		B2F1DD6C1EDC4777000D9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F1DD6A1EDC4777000D9CA4 /* Main.storyboard */; };
 		B2F1DD6E1EDC4777000D9CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F1DD6D1EDC4777000D9CA4 /* Assets.xcassets */; };
 		B2F1DD711EDC4777000D9CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F1DD6F1EDC4777000D9CA4 /* LaunchScreen.storyboard */; };
+		B2F1DD821EDC4D20000D9CA4 /* TapsellSDKv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2F1DD801EDC4D1A000D9CA4 /* TapsellSDKv3.framework */; };
+		B2F1DD831EDC4D20000D9CA4 /* TapsellSDKv3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2F1DD801EDC4D1A000D9CA4 /* TapsellSDKv3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B2F1DD7F1EDC47F2000D9CA4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B2F1DD831EDC4D20000D9CA4 /* TapsellSDKv3.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B2F1DD631EDC4777000D9CA4 /* TapsellTestv3Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapsellTestv3Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +38,7 @@
 		B2F1DD6D1EDC4777000D9CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2F1DD701EDC4777000D9CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F1DD721EDC4777000D9CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2F1DD801EDC4D1A000D9CA4 /* TapsellSDKv3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapsellSDKv3.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F1DD821EDC4D20000D9CA4 /* TapsellSDKv3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		B2F1DD5A1EDC4776000D9CA4 = {
 			isa = PBXGroup;
 			children = (
+				B2F1DD801EDC4D1A000D9CA4 /* TapsellSDKv3.framework */,
 				B2F1DD651EDC4777000D9CA4 /* TapsellTestv3Swift */,
 				B2F1DD641EDC4777000D9CA4 /* Products */,
 			);
@@ -74,6 +93,7 @@
 				B2F1DD5F1EDC4777000D9CA4 /* Sources */,
 				B2F1DD601EDC4777000D9CA4 /* Frameworks */,
 				B2F1DD611EDC4777000D9CA4 /* Resources */,
+				B2F1DD7F1EDC47F2000D9CA4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,6 +284,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B86UJLD9TA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TapsellTestv3Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ir.tapsell.TapsellTestv3Swift;
@@ -277,6 +301,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B86UJLD9TA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TapsellTestv3Swift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ir.tapsell.TapsellTestv3Swift;
