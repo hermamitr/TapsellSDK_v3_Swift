@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B24B6DE71EF90D0B00FCEA3E /* TapsellSDKv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B24B6DE51EF90D0500FCEA3E /* TapsellSDKv3.framework */; };
-		B24B6DE81EF90D0B00FCEA3E /* TapsellSDKv3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B24B6DE51EF90D0500FCEA3E /* TapsellSDKv3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B214CC2A1F1121BA00F7567C /* TapsellSDKv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B214CC291F1121BA00F7567C /* TapsellSDKv3.framework */; };
 		B2F1DD671EDC4777000D9CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1DD661EDC4777000D9CA4 /* AppDelegate.swift */; };
 		B2F1DD691EDC4777000D9CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1DD681EDC4777000D9CA4 /* ViewController.swift */; };
 		B2F1DD6C1EDC4777000D9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F1DD6A1EDC4777000D9CA4 /* Main.storyboard */; };
@@ -23,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B24B6DE81EF90D0B00FCEA3E /* TapsellSDKv3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,7 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B24B6DE51EF90D0500FCEA3E /* TapsellSDKv3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapsellSDKv3.framework; sourceTree = "<group>"; };
+		B214CC291F1121BA00F7567C /* TapsellSDKv3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapsellSDKv3.framework; sourceTree = "<group>"; };
 		B2F1DD631EDC4777000D9CA4 /* TapsellTestv3Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapsellTestv3Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F1DD661EDC4777000D9CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F1DD681EDC4777000D9CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B24B6DE71EF90D0B00FCEA3E /* TapsellSDKv3.framework in Frameworks */,
+				B214CC2A1F1121BA00F7567C /* TapsellSDKv3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +54,7 @@
 		B2F1DD5A1EDC4776000D9CA4 = {
 			isa = PBXGroup;
 			children = (
-				B24B6DE51EF90D0500FCEA3E /* TapsellSDKv3.framework */,
+				B214CC291F1121BA00F7567C /* TapsellSDKv3.framework */,
 				B2F1DD651EDC4777000D9CA4 /* TapsellTestv3Swift */,
 				B2F1DD641EDC4777000D9CA4 /* Products */,
 			);

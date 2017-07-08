@@ -77,7 +77,11 @@ class ViewController: UIViewController {
             showOptions.setOrientation(OrientationUnlocked)
             showOptions.setBackDisabled(false)
             showOptions.setShowDialoge(true)
-            tapsellAd?.show(with: showOptions)
+            tapsellAd?.show(with: showOptions, andOpenedCallback: { (tapsellAd) in
+                NSLog("Ad Opened");
+            }, andClosedCallback: { (tapsellAd) in
+                NSLog("Ad Closed");
+            })
             self.btnShowAd.isHidden = true
             self.btnRequestAd.setTitle("Request Ad", for: .normal)
         }
