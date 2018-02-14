@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var btnRequestAd: UIButton!
     @IBOutlet weak var btnShowAd: UIButton!
+    @IBOutlet var bannerView: TSBannerAdView!
     weak var tapsellAd : TapsellAd?
     
     override func viewDidLoad() {
@@ -21,7 +22,8 @@ class ViewController: UIViewController {
         let config = TSConfiguration()
         config.setDebugMode(true);
         
-        Tapsell.initialize(withAppKey: "jtbrlocfkhffdtsndjnftchlqkaqakommthnhpresikasoqmodtdqkklhdbtjtfgahckdi", andConfig: config)
+        Tapsell.initialize(withAppKey: "mioeqormndnommjqoapteerhkhccdttralkisksfabprknrthaagbofcohiojadbiqhcrc", andConfig: config)
+        
         
         self.btnShowAd.isHidden = true
         self.btnRequestAd.titleLabel?.numberOfLines = 0
@@ -32,6 +34,14 @@ class ViewController: UIViewController {
                 NSLog("Congratulations! awarded 1 coin.");
             }
         }
+        
+        bannerView.loadAd(withZoneId: "5a844ceeada66f0001edb032", andBannerType: 1, onRequestFilled: {
+            NSLog("Banner ad filled");
+        }, onHideBannerClicked: {
+            NSLog("Banner Ad view is hidden!");
+        }, onNoAdAvailable: {
+            NSLog("No standard banner available");
+        })
         
     }
 
@@ -44,9 +54,9 @@ class ViewController: UIViewController {
         {
             self.btnRequestAd.setTitle("Fetching...", for: .normal)
             let requestOptions = TSAdRequestOptions()
-            requestOptions.setCacheType(CacheTypeCached)
+            requestOptions.setCacheType(CacheTypeStreamed)
             
-            Tapsell.requestAd(forZone: "5948d769468465339df23e02", andOptions: requestOptions, onAdAvailable:{ (tapsellAd) in
+            Tapsell.requestAd(forZone: "592be81646846575539c6a25", andOptions: requestOptions, onAdAvailable:{ (tapsellAd) in
                 
                 NSLog("Ad Available")
                 self.tapsellAd = tapsellAd
@@ -86,6 +96,13 @@ class ViewController: UIViewController {
             self.btnRequestAd.setTitle("Request Ad", for: .normal)
         }
 
+    }
+    
+    @IBAction func nativeAdClicked(_ sender: Any) {
+//        let storyBoard = UIStoryboard(name: "NativeAd", bundle: nil);
+        let storyboard = UIStoryboard(name: "NativeAd", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "NativeAdController")
+        self.present(controller, animated: true, completion: nil)
     }
 
 }
