@@ -99,9 +99,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func nativeAdClicked(_ sender: Any) {
-//        let storyBoard = UIStoryboard(name: "NativeAd", bundle: nil);
         let storyboard = UIStoryboard(name: "NativeAd", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "NativeAdController")
+        self.present(controller, animated: true, completion: nil)
+    }
+    
+    @IBAction func nativeAdListClicked(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "NativeAdList", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "NativeAdListController")
         self.present(controller, animated: true, completion: nil)
     }
 

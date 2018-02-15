@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B20B39F02034A06900D711B0 /* TapsellSDKv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20B39EF2034A06900D711B0 /* TapsellSDKv3.framework */; };
-		B20B39F12034A06900D711B0 /* TapsellSDKv3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B20B39EF2034A06900D711B0 /* TapsellSDKv3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B212BFF92035C7C3003CDB74 /* TapsellSDKv3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B212BFF82035C7C3003CDB74 /* TapsellSDKv3.framework */; };
+		B212BFFA2035C7C3003CDB74 /* TapsellSDKv3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B212BFF82035C7C3003CDB74 /* TapsellSDKv3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B22AA633202F42550090497B /* NativeAd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B22AA632202F42550090497B /* NativeAd.storyboard */; };
 		B22AA635202F43280090497B /* NativeAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22AA634202F43280090497B /* NativeAdController.swift */; };
+		B2B5BB9220359FAF002B9146 /* NativeAdList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B5BB9120359FAF002B9146 /* NativeAdList.storyboard */; };
+		B2B5BB942035A0CD002B9146 /* NativeAdListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5BB932035A0CD002B9146 /* NativeAdListController.swift */; };
+		B2B5BB972035A188002B9146 /* NativeBannerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B5BB952035A188002B9146 /* NativeBannerTableCell.xib */; };
+		B2B5BB982035A188002B9146 /* NativeVideoTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B5BB962035A188002B9146 /* NativeVideoTableCell.xib */; };
+		B2B5BB9A2035A1BF002B9146 /* NativeBannerTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5BB992035A1BF002B9146 /* NativeBannerTableCellTableViewCell.swift */; };
+		B2B5BB9C2035C246002B9146 /* NativeVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5BB9B2035C246002B9146 /* NativeVideoTableViewCell.swift */; };
 		B2F1DD671EDC4777000D9CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1DD661EDC4777000D9CA4 /* AppDelegate.swift */; };
 		B2F1DD691EDC4777000D9CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F1DD681EDC4777000D9CA4 /* ViewController.swift */; };
 		B2F1DD6C1EDC4777000D9CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F1DD6A1EDC4777000D9CA4 /* Main.storyboard */; };
@@ -25,7 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B20B39F12034A06900D711B0 /* TapsellSDKv3.framework in Embed Frameworks */,
+				B212BFFA2035C7C3003CDB74 /* TapsellSDKv3.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,9 +39,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B20B39EF2034A06900D711B0 /* TapsellSDKv3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapsellSDKv3.framework; sourceTree = "<group>"; };
+		B212BFF82035C7C3003CDB74 /* TapsellSDKv3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TapsellSDKv3.framework; sourceTree = "<group>"; };
 		B22AA632202F42550090497B /* NativeAd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeAd.storyboard; sourceTree = "<group>"; };
 		B22AA634202F43280090497B /* NativeAdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdController.swift; sourceTree = "<group>"; };
+		B2B5BB9120359FAF002B9146 /* NativeAdList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeAdList.storyboard; sourceTree = "<group>"; };
+		B2B5BB932035A0CD002B9146 /* NativeAdListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeAdListController.swift; sourceTree = "<group>"; };
+		B2B5BB952035A188002B9146 /* NativeBannerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeBannerTableCell.xib; sourceTree = "<group>"; };
+		B2B5BB962035A188002B9146 /* NativeVideoTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeVideoTableCell.xib; sourceTree = "<group>"; };
+		B2B5BB992035A1BF002B9146 /* NativeBannerTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		B2B5BB9B2035C246002B9146 /* NativeVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeVideoTableViewCell.swift; sourceTree = "<group>"; };
 		B2F1DD631EDC4777000D9CA4 /* TapsellTestv3Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapsellTestv3Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2F1DD661EDC4777000D9CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2F1DD681EDC4777000D9CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20B39F02034A06900D711B0 /* TapsellSDKv3.framework in Frameworks */,
+				B212BFF92035C7C3003CDB74 /* TapsellSDKv3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +72,7 @@
 		B2F1DD5A1EDC4776000D9CA4 = {
 			isa = PBXGroup;
 			children = (
-				B20B39EF2034A06900D711B0 /* TapsellSDKv3.framework */,
+				B212BFF82035C7C3003CDB74 /* TapsellSDKv3.framework */,
 				B2F1DD651EDC4777000D9CA4 /* TapsellTestv3Swift */,
 				B2F1DD641EDC4777000D9CA4 /* Products */,
 			);
@@ -80,8 +92,14 @@
 				B2F1DD661EDC4777000D9CA4 /* AppDelegate.swift */,
 				B2F1DD681EDC4777000D9CA4 /* ViewController.swift */,
 				B22AA634202F43280090497B /* NativeAdController.swift */,
+				B2B5BB932035A0CD002B9146 /* NativeAdListController.swift */,
+				B2B5BB992035A1BF002B9146 /* NativeBannerTableCellTableViewCell.swift */,
+				B2B5BB9B2035C246002B9146 /* NativeVideoTableViewCell.swift */,
 				B2F1DD6A1EDC4777000D9CA4 /* Main.storyboard */,
 				B22AA632202F42550090497B /* NativeAd.storyboard */,
+				B2B5BB9120359FAF002B9146 /* NativeAdList.storyboard */,
+				B2B5BB952035A188002B9146 /* NativeBannerTableCell.xib */,
+				B2B5BB962035A188002B9146 /* NativeVideoTableCell.xib */,
 				B2F1DD6D1EDC4777000D9CA4 /* Assets.xcassets */,
 				B2F1DD6F1EDC4777000D9CA4 /* LaunchScreen.storyboard */,
 				B2F1DD721EDC4777000D9CA4 /* Info.plist */,
@@ -151,9 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2F1DD711EDC4777000D9CA4 /* LaunchScreen.storyboard in Resources */,
+				B2B5BB982035A188002B9146 /* NativeVideoTableCell.xib in Resources */,
 				B2F1DD6E1EDC4777000D9CA4 /* Assets.xcassets in Resources */,
 				B22AA633202F42550090497B /* NativeAd.storyboard in Resources */,
 				B2F1DD6C1EDC4777000D9CA4 /* Main.storyboard in Resources */,
+				B2B5BB9220359FAF002B9146 /* NativeAdList.storyboard in Resources */,
+				B2B5BB972035A188002B9146 /* NativeBannerTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B5BB9C2035C246002B9146 /* NativeVideoTableViewCell.swift in Sources */,
 				B2F1DD691EDC4777000D9CA4 /* ViewController.swift in Sources */,
 				B22AA635202F43280090497B /* NativeAdController.swift in Sources */,
+				B2B5BB9A2035A1BF002B9146 /* NativeBannerTableCellTableViewCell.swift in Sources */,
 				B2F1DD671EDC4777000D9CA4 /* AppDelegate.swift in Sources */,
+				B2B5BB942035A0CD002B9146 /* NativeAdListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

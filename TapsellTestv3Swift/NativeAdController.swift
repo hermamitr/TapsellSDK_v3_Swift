@@ -33,24 +33,24 @@ class NativeAdController : UIViewController {
     }
     
     @IBAction func nativeBannerClicked(_ sender: Any) {
-        nativeVideo.isHidden = true;
-        nativeBanner.isHidden = false;
+        nativeVideo.isHidden = true
+        nativeBanner.isHidden = false
         Tapsell.requestNativeBannerAd(forZone: "5a8401093194ec0001bb1059",
                                       andContainerView: nativeBanner,
-                                      onRequestFilled: {NSLog("filled")},
-                                      onNoAdAvailable: { NSLog("no native banner available")},
-                                      onError: { (error) in NSLog("error")})
+                                      onRequestFilled: {print("native banner filled")},
+                                      onNoAdAvailable: { print("no native banner available")},
+                                      onError: { (error) in print("error: ", error ?? "Null")})
 
     }
     
     @IBAction func nativeVideoClicked(_ sender: Any) {
-        nativeVideo.isHidden = false;
-        nativeBanner.isHidden = true;
+        nativeVideo.isHidden = false
+        nativeBanner.isHidden = true
         Tapsell.requestNativeVideoAd(forZone: "5a844bd6d612ee0001004566",
                                       andContainerView: nativeVideo,
-                                      onRequestFilled: {NSLog("filled")},
-                                      onNoAdAvailable: { NSLog("no native banner available")},
-                                      onError: { (error) in NSLog("error")})
+                                      onRequestFilled: {print("native video filled")},
+                                      onNoAdAvailable: { print("no native video available")},
+                                      onError: { (error) in print("error: ", error ?? "Null")})
 
     }
     
